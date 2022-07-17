@@ -18,7 +18,7 @@
 
   ## Installation
 
-  ### The Following necessary dependencies must be installed to run this application: Node, Jest, Inquirer.
+  ### The Following necessary dependencies must be installed to run this application: Express, MongoDb, Mongoose.
   
   ## Usage
 
