@@ -22,7 +22,7 @@
   
   ## Usage
 
-  ### In order to use this app, install Node.js in the terminal and follow these Instructions: To run the test type npm run test in the terminal and to markup use node index.
+  ### In order to use this app, install Node.js in the terminal and follow these Instructions: Install nodemon and run "npm run dev"
   
   ## License
 
