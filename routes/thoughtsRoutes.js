@@ -1,20 +1,15 @@
 const express = require("express");
 const router = express.Router();
+const {
+  getAllThought,
+  createThought,
+  getThoughtById,
+  updateThought,
+  deleteThought,
+} = require("../controllers/ThoughtController");
 
-router.get("/", (req, res) => {
-  res.status(200).json({ message: "Get Thoughts" });
-});
+router.route("/").get(getAllThought).post(createThought);
 
-router.post("/", (req, res) => {
-  res.status(200).json({ message: "Get Thoughts" });
-});
-
-router.put("/", (req, res) => {
-  res.status(200).json({ message: "Get Thoughts" });
-});
-
-router.delete("/", (req, res) => {
-  res.status(200).json({ message: "Get Thoughts" });
-});
+router.route("/:id").get(getThoughtById).put(updateThought).delete(deleteThought);
 
 module.exports = router;
